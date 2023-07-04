@@ -169,7 +169,7 @@ h1 {
      /* added style proprities to image 1 */
      
      #w1 {
-        background-image: url(/images/Screenshot\ 2023-07-03\ 105737.png);
+        background-image: url(./images/Screenshot\ 2023-07-03\ 105737.png);
         grid-column: 2/8;
         grid-row: 1/5;
      margin-left: 3%;
