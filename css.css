@@ -1,0 +1,659 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 1500px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #d9dcd6;
+  }
+  
+  :root {
+    --header:  rgb(114, 109, 109);
+    --head1:  rgb(118, 205, 205)  ;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  /* added colors and created head background */
+ .head   {
+    margin-top: 0;
+    padding: 50px;  
+    padding-top: 10px; 
+    padding-bottom: 65px; 
+    background-color: rgb(114, 109, 109);
+  
+ }
+   .nav{
+        float: right;
+        margin-right: 80px;}
+
+      
+    .head nav ul { 
+       list-style-type: none;
+   }
+   .head nav ul li {
+    /* changed nav bar to be displaced as inline-block */
+   display: inline-block;
+   margin-left: 25px;
+}
+h1 { 
+    /* fiexed h1 to the top-left */
+    color: var( --header);
+   float: left;
+   padding: 10px 10px 2px 100px;
+   background-color: rgb(118, 205, 205);
+   margin-left: -80px;
+   border-radius: 5px;
+}
+
+.head nav ul  a{
+    color: var( --head1);}
+    .hero-banner {
+        /* banner under the header and with cool subtitle*/
+        display: flex;
+        height: 150px;
+        background-image: url(/images/1892752.jpg);
+     background-size: cover;
+  background-position: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+    }
+     /* added hoover effect for nav bar items */
+    .head nav ul li:hover {
+        transform: scale(1.1); 
+    }
+    .subt { 
+        /* h2 proprieties element */
+        margin-bottom: 15px;
+        margin-right: 50px;
+        color:rgb(225, 220, 220);
+        text-shadow: 2px 2px 1px rgb(38, 27, 27);
+        
+     }
+   
+
+     .me{
+        width: 140px;
+        height: 170px;
+        border-radius: 90px ;
+        margin-left: 21%;
+    }
+     /* grid area where are located other containers with their own grid areas */
+     .page-wrapper {
+        margin-left: 10%;
+        height: 900px;
+        display: grid;
+       
+        grid-template-columns: 10% 70%;
+        grid-template-rows: 20% 75% 10%;
+        grid-template-areas: "about about "
+    " work work"
+    "contact contact";
+    
+     }
+     #about {
+        grid-area: about;
+     }
+     #work {
+         grid-area: work;
+     }
+     .page-section#about p  {
+        font-size: 0.8em;
+        line-height: 1.3em;
+        
+     }
+     #contact {
+        grid-area: contact;
+     }
+    
+
+     /* about me section and it's grid area */
+#about {
+    
+    display:grid ;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.page-section #aboutme {
+    grid-column:1/2 ;
+    grid-row: 1/2;
+    text-align: right;
+    border-right: solid 4px grey;
+    padding-right: 10px;
+    color: var(--header);
+}
+
+/* paragrapsh to arrange */
+  .page-section .par1 {
+    grid-column: 2/8;
+    grid-row: 1/4;
+    margin-left: 3%;
+    
+   
+ }
+ 
+ 
+
+
+
+     /* work section and images  */
+     #work {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows:repeat(8,fr);
+        column-gap: 5px;
+        
+     }
+     #wor {
+        border-right: solid 4px grey;
+        grid-column: 1/1;
+        grid-row: 1/8;
+        margin-top: 50px;
+        text-align: right;
+        padding-right: 10px;
+        color: var(--header);
+    
+       
+     }
+     /* added style proprities to image 1 */
+     
+     #w1 {
+        background-image: url(/images/Screenshot\ 2023-07-03\ 105737.png);
+        grid-column: 2/8;
+        grid-row: 1/5;
+     margin-left: 3%;
+        background-size: cover;
+        background-position: end;
+       text-align: center ;
+       padding: 10px 10px 10px 10px;
+       border: solid 4px var(--head1) ;
+       font-weight:  bold;
+       text-shadow: 1px 2px 1px var(--header);
+     }
+     #w1:hover { transform: scale(1.1); 
+        box-shadow: inset 0px 0px 8px var(--head1)
+        
+     }
+     .page-section #w1 a {
+        color: var(--head1);}
+     
+     /* added style proprities to image 2 */
+     #w2 { margin-left: 6%;
+        grid-column: 2/5;
+        grid-row: 5/7;
+        background-image: url(/images/AMJewerllyuk.gif);
+        border: solid 4px var(--head1);
+        font-weight:  bold;
+        text-shadow: 1px 2px 1px var(--header);
+    }
+    #w2:hover { transform: scale(1.1); 
+        box-shadow: inset 0px 0px 8px var(--head1)}
+        .page-section #w2 a {
+            color: var(--head1);}
+
+        /* added style proprities to image 3 */
+    #w3 {
+        grid-column:5/8 ;
+        grid-row: 5/7;
+        background-image: url(/images/whitespirkelsproject.gif);
+   border: solid 4px var(--head1);
+     font-weight:  bold;
+     text-shadow: 1px 2px 1px var(--header);
+
+    }
+    #w3:hover { transform: scale(1.1); 
+        box-shadow: inset 0px 0px 8px var(--head1);
+    }
+    .page-section #w3 a {
+        color: var(--head1);}
+    
+        /* added style proprities to image 4 */
+    #w4 { margin-left: 3%;
+        color: var(--head1);
+        background-image: url(/images/myprofile.gif);
+        grid-column:2/8  ;
+        grid-row:7/9 ;
+        border: solid 6px var(--head1);
+        font-weight:  bold;
+        background-size: cover;
+        background-position: end;
+        text-shadow: 1px 2px 1px var(--header);
+    }
+    #w4:hover { transform: scale(1.1); 
+        box-shadow: inset 0px 0px 8px var(--head1)
+    }
+   
+
+    /* contact me details grid area */
+
+
+       
+ #contact ul li {
+    display: inline-block;
+    margin: 50px;
+     
+    
+ } 
+ .page-section-contact {
+    display: grid;
+    grid-template-columns: 12% 80% ;
+    grid-template-rows:  150%;
+    text-align: center;
+   
+ }
+
+ #footer {
+    grid-column: 2/5;
+    grid-row: 1;
+    
+ }
+ .page-section-contact #contact1 {
+    grid-column: 1/2;
+    text-align: right;
+    margin-top: 40px;
+    border-right: solid 4px grey;
+    padding-top: 10px;
+  
+    padding-right: 10px;
+    color: var(--header);
+    
+ }
+ .page-section-contact .footer1 {
+    display: flex;
+    justify-content: center;
+    
+ }
+ 
+ .page-section-contact .footer1 ul a {
+    color: var(--head1);
+    pad: 5ps 5px 5px 5px;
+    text-shadow: 1px 2px 1px var(--header);
+
+ }
+ .page-section-contact .footer1 ul a:hover {
+    transform: scale(1.1);
+ }
+
+
+
+
+
+
+
+
+/* media querry firt approach */
+
+@media screen and (max-width: 962px ) {
+    .subt {
+        font-size: 0.9em;
+    }
+
+    .page-section#about p {
+       font-size: 0.75em; }
+       .me{
+       
+        margin-left: 40%;
+    }
+ 
+     }
+
+ @media screen and (max-width: 790px) {
+    .head{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 75% 25% ;
+height: 150px;
+    }
+    .head h1 {
+        grid-column: 1/4;
+        grid-row: 1/2 ;
+    }
+    h1 { 
+        /* fiexed h1 to the top-left */
+        color: var( --header);
+  text-align: center;
+       padding: 10px 10px 2px 10px;
+       background-color: rgb(118, 205, 205);
+       margin-left: 0px;
+       border-radius: 5px;
+    }
+   
+    .head nav ul li {
+        /* changed nav bar to be displaced as inline-block */
+       display: inline-block;
+       margin: 0 auto;
+       
+    }
+.nav {
+  grid-column: 1/4;
+  grid-row: 2/3;
+    margin:  0 auto;
+  
+    font-size: 1em;
+}
+.head   {
+    margin-top: 0;
+    padding: 10px;  
+    padding-top: 10px; 
+    padding-bottom: 50px; 
+    background-color: rgb(114, 109, 109);
+  
+ }
+ .hero-banner {
+    /* banner under the header and with cool subtitle*/
+    display: flex;
+    height: 100px;
+    background-image: url(/images/1892752.jpg);
+ background-size: cover;
+background-position: center;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+.subt { 
+    /* h2 proprieties element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    margin-right: 1px;
+    
+ }
+
+  .me{
+ 
+ 
+    margin-left: 42%;
+}
+
+.page-wrapper {
+    margin-left: 0px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% 75% 10%;
+    grid-template-areas: "about about about "
+" work work work"
+"contact contact contact";
+row-gap: 30px;
+
+ }
+ #about {
+    
+    display:grid ;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+.page-section #aboutme {
+    text-align: center;
+    grid-column:1/9 ;
+    grid-row: 1/2;
+  
+    border-right: none;
+    border-bottom: solid 4px grey;
+    padding-right: 1px;
+    color: var(--header);
+    
+}
+.page-section .par1 {
+    grid-column: 1/9;
+    grid-row: 2/4;
+    margin-left: none;
+   
+ }
+ 
+ /* work section and images  */
+ #work {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:repeat(10,fr);
+    column-gap: none;
+    
+ }
+ #wor {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    border-right: none;
+    border-bottom: solid 4px;
+    margin-top: none;
+    text-align: center;
+    padding-right: none;
+    color: var(--header);
+padding: none;
+
+   
+ }#w1 {
+    margin-left: 0%;
+    background-image: url(/images/Screenshot\ 2023-07-03\ 105737.png);
+    grid-column: 1/9;
+    grid-row: 2/4;
+ margin-left: none;
+    background-size: cover;
+    background-position: end;
+   text-align: center ;
+   padding:none;
+   border: solid 4px var(--head1) ;
+   font-weight:  bold;
+   text-shadow: 1px 2px 1px var(--header);
+   
+ } 
+ #w2 { margin-left: 0%;
+    grid-column: 1/9;
+    grid-row: 4/6;
+    background-image: url(/images/AMJewerllyuk.gif);
+    border: solid 4px var(--head1);
+    font-weight:  bold;
+    text-shadow: 1px 2px 1px var(--header);
+    text-align: center;
+    margin-top: -1%;
+}
+#w3 {margin-top: -6%;
+    text-align: center;
+    grid-column:1/9 ;
+    grid-row: 7/9;
+    background-image: url(/images/whitespirkelsproject.gif);
+border: solid 4px var(--head1);
+ font-weight:  bold;
+ text-shadow: 1px 2px 1px var(--header);
+
+}
+#w4 { margin-left: none;
+    margin-top: -1%;
+    margin-left: 0%;
+    color: var(--head1);
+    background-image: url(/images/myprofile.gif);
+    grid-column:1/9  ;
+    grid-row:9/11 ;
+    border: solid 6px var(--head1);
+    font-weight:  bold;
+    background-size: cover;
+    background-position: end;
+    text-shadow: 1px 2px 1px var(--header);
+    text-align: center;
+}
+
+    /* contact me details grid area */
+
+
+       
+    #contact ul li {
+        display: inline-flex;
+        margin: none;
+         
+        
+     } 
+     .page-section-contact {
+        display: grid;
+        grid-template-columns:repeat(8,1fr) ;
+        grid-template-rows:  repeat(3,fr);
+        text-align: center;
+       
+     }
+    
+     #footer1 {
+        grid-column: 1/9;
+        grid-row:2/4 ;
+        
+     }
+     .page-section-contact #contact1 {
+        grid-column: 1/9;
+        grid-row: 1/2;
+        text-align: center;
+        margin-top: none;
+        border-right: none;
+        padding-top: none;
+        border-bottom: solid 4px grey;
+      
+        padding-right:none;
+        color: var(--header);
+        
+     }
+     
+     
+     .page-section-contact .footer1 ul a {
+        color: var(--head1);
+        pad: 5ps 5px 5px 5px;
+        text-shadow: 1px 2px 1px var(--header);
+        font-size: 0.8em;
+        
+           
+    
+     }
+     .page-section-contact .footer1 ul{
+        list-style-type: none;
+       
+
+        
+     }
+     .page-section-contact .footer1{
+        display: flex;
+        justify-content:center ;
+     }
+     .page-section-contact{
+        text-align: center;
+     }
+
+ }
+ 
+
+@media screen and (max-width: 750px ){
+    #w3 {
+        margin-top: -7%;
+    }
+
+}
+   
+     @media screen and (max-width: 510px ) {
+
+    #w3 {
+        margin-top: -11%;
+    }
+
+
+         .head .nav li { font-size: 0.8em;
+
+         }
+        .page-section#about p {
+           font-size: 0.75em; }
+
+           .me{
+            width: 105px;
+            height: 125px;
+            border-radius: 90px ;
+            margin-left: 37%;
+        }
+        .subt {
+            font-size: 0.7em;
+        }
+        #wor {
+            font-size: 1.25em;
+        }
+        #aboutme {
+            font-size: 1.25em ;
+        }
+        #contact1 {
+            font-size: 1.25em ;
+        }
+.page-section#work p  {
+    font-size: 0.85em;
+}
+         }
+        
+
+   
+
+@media screen and (max-width: 505px ) {
+    
+    .me{
+        width: 105px;
+        height: 125px;
+        border-radius: 90px ;
+        margin-left: 37%;
+    }
+ .page-section#about p {
+    font-size: 0.7em;
+  }
+  .subt {
+    font-size: 0.65em;
+}
+
+}
+
+
+@media screen and (max-width: 405px ) {
+    
+    #w3 {
+        margin-top: -13%;
+    }
+    .page-section#about p {
+       font-size: 0.7em; }
+
+       .me{
+        width: 105px;
+        height: 125px;
+        border-radius: 90px ;
+        margin-left: 33%;
+    }
+    .subt {
+        font-size: 0.65em;
+    }
+.page-section-contact .footer1 ul li  {
+    line-height: 0.5px;
+}
+
+
+     }
+
+@media screen and (max-width: 357px ) {
+    
+    #w3 {
+        margin-top: -15%;
+    }
+    .page-section#about p {
+       font-size: 0.6em;
+     }
+   
+   }
+   @media screen and (max-width: 276px ) {
+    
+
+    .page-section#about p {
+       font-size: 0.5em;
+     }
+   
+   }
+  
