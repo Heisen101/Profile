@@ -192,7 +192,7 @@ h1 {
      #w2 { margin-left: 6%;
         grid-column: 2/5;
         grid-row: 5/7;
-        background-image: url(/images/AMJewerllyuk.gif);
+        background-image: url(./images/AMJewerllyuk.gif);
         border: solid 4px var(--head1);
         font-weight:  bold;
         text-shadow: 1px 2px 1px var(--header);
@@ -206,7 +206,7 @@ h1 {
     #w3 {
         grid-column:5/8 ;
         grid-row: 5/7;
-        background-image: url(/images/whitespirkelsproject.gif);
+        background-image: url(./images/whitespirkelsproject.gif);
    border: solid 4px var(--head1);
      font-weight:  bold;
      text-shadow: 1px 2px 1px var(--header);
@@ -221,7 +221,7 @@ h1 {
         /* added style proprities to image 4 */
     #w4 { margin-left: 3%;
         color: var(--head1);
-        background-image: url(/images/myprofile.gif);
+        background-image: url(./images/myprofile.gif);
         grid-column:2/8  ;
         grid-row:7/9 ;
         border: solid 6px var(--head1);
@@ -354,7 +354,7 @@ height: 150px;
     /* banner under the header and with cool subtitle*/
     display: flex;
     height: 100px;
-    background-image: url(/images/1892752.jpg);
+    background-image: url(./images/1892752.jpg);
  background-size: cover;
 background-position: center;
 justify-content: flex-end;
@@ -438,7 +438,7 @@ padding: none;
    
  }#w1 {
     margin-left: 0%;
-    background-image: url(/images/Screenshot\ 2023-07-03\ 105737.png);
+    background-image: url(./images/Screenshot\ 2023-07-03\ 105737.png);
     grid-column: 1/9;
     grid-row: 2/4;
  margin-left: none;
@@ -454,7 +454,7 @@ padding: none;
  #w2 { margin-left: 0%;
     grid-column: 1/9;
     grid-row: 4/6;
-    background-image: url(/images/AMJewerllyuk.gif);
+    background-image: url(./images/AMJewerllyuk.gif);
     border: solid 4px var(--head1);
     font-weight:  bold;
     text-shadow: 1px 2px 1px var(--header);
@@ -465,7 +465,7 @@ padding: none;
     text-align: center;
     grid-column:1/9 ;
     grid-row: 7/9;
-    background-image: url(/images/whitespirkelsproject.gif);
+    background-image: url(./images/whitespirkelsproject.gif);
 border: solid 4px var(--head1);
  font-weight:  bold;
  text-shadow: 1px 2px 1px var(--header);
@@ -475,7 +475,7 @@ border: solid 4px var(--head1);
     margin-top: -1%;
     margin-left: 0%;
     color: var(--head1);
-    background-image: url(/images/myprofile.gif);
+    background-image: url(./images/myprofile.gif);
     grid-column:1/9  ;
     grid-row:9/11 ;
     border: solid 6px var(--head1);
