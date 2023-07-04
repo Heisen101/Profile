@@ -15,7 +15,7 @@ The "Work" section showcases Vasile's projects. The current projects featured ar
 [Horiseon project:](https://heisen101.github.io/horiseon-marketing-agency-website/#social-media-marketing) A project developed by Vasile. Details and information about the project can be found by visiting the provided link.
 [My current work project:](https://www.amjewelleryuk.com/) This is Vasile's ongoing work project. More information about it can be found by visiting the provided link.
 [E-commerce project:](https://whitesparkles.co.uk/) Vasile has worked on this e-commerce project. To learn more about it, visit the provided link.
-[Portfolio:]() This section may contain a collection of Vasile's work samples or additional projects.
+[Portfolio:](https://heisen101.github.io/Profile/) This section may contain a collection of Vasile's work samples or additional projects.
 
 ## Contact Me
 The "Contact Me" section provides various ways to get in touch with Vasile Orbu. The available contact information includes:
