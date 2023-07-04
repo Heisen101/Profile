@@ -61,7 +61,7 @@ h1 {
         /* banner under the header and with cool subtitle*/
         display: flex;
         height: 150px;
-        background-image: url(/images/1892752.jpg);
+        background-image: url(./images/1892752.jpg);
      background-size: cover;
   background-position: center;
   justify-content: flex-end;
